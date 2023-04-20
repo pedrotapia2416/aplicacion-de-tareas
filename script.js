@@ -52,7 +52,7 @@ generateBtn.addEventListener("click", function() {
       messageText = "Administración / Gestion";
       break;
     case 6:
-      const randomSubNum2 = Math.floor(Math.random() * 8) + 1;
+      const randomSubNum2 = Math.floor(Math.random() * 4) + 1;
       switch(randomSubNum2) {
         case 1:
           messageText = "Estudiar Política Económica Argentina";
