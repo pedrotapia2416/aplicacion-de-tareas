@@ -94,3 +94,24 @@ tr:hover {
     padding: 6px;
   }
 }
+
+@media screen and (max-width: 600px) {
+  button {
+    font-size: 14px;
+    padding: 8px;
+  }
+  
+  table {
+    font-size: 12px;
+  }
+  
+  th, td {
+    padding: 6px;
+  }
+  
+  .modal-content {
+    padding: 12px;
+    max-width: 100%;
+  }
+}
+
