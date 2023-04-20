@@ -147,3 +147,14 @@ importarDatosBtn.addEventListener("click", importResults);
 const exportarDatosBtn = document.getElementById("exportar-datos-btn");
 exportarDatosBtn.addEventListener("click", exportResults);
 
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", function() {
+    navigator.serviceWorker.register("/sw.js")
+      .then(function(registration) {
+        console.log("Service Worker registrado con éxito");
+      })
+      .catch(function(error) {
+        console.error("Error al registrar el Service Worker", error);
+      });
+  });
+}
