@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Generador de números aleatorios</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <button id="generate-btn">Generar número aleatorio</button>
+    <button id="importar-datos-btn">Importar datos</button>
+    <button id="exportar-datos-btn">Exportar datos</button>
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 id="result"></h2>
+        <p id="message"></p>
+      </div>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>Fecha</th>
+          <th>Hora</th>
+          <th>Número generado</th>
+          <th>Mensaje</th>
+        </tr>
+      </thead>
+      <tbody id="table-body">
+      </tbody>
+    </table>
+    <script src="script.js"></script>
+  </body>
+</html>
